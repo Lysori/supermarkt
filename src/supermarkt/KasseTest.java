@@ -16,13 +16,14 @@ public class KasseTest {
 			Kasse kasse = new Kasse();
 			Produkt apfel = new Produkt ("Apfel", 30);
 			Produkt banane = new Produkt ("Banane", 80);
-			Produkt birne = new Produkt ("Birne" , 60);
+			Produkt erdbeerEis = new Produkt ("Erdbeereis" , 499);
+			Produkt pistazienEis = new Produkt ("Pistazieneis", 950);
 			
 			//2. Ausführung Programmlogik
 			kasse.scan(apfel);
 			kasse.scan(banane);
 			kasse.scan(banane);
-			kasse.scan(birne);
+			
 			
 			//3.Ergebnisse mit den zu erwartenden Werten vergleichen
 			Assert.assertEquals((apfel.getPreis() + 2 * banane.getPreis()), kasse.getZwischenSumme(), 0.01);
