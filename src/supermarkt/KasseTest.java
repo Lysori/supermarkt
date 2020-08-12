@@ -61,6 +61,8 @@ public class KasseTest {
 			
 			for(Produkt p : produkte) {
 				System.out.println(p.getNameProdukt() + " " + p.getPreis() + " cent");
+				
 			}
+			System.out.println("Versteckte Nachricht an Lisa");
 }
 }
