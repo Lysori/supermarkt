@@ -64,5 +64,6 @@ public class KasseTest {
 				
 			}
 			System.out.println("Versteckte Nachricht an Lisa");
+			System.out.println("Versteckte Nachricht an Lisa: HUHU");
 }
 }
