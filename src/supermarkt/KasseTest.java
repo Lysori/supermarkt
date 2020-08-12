@@ -50,25 +50,25 @@ public class KasseTest {
 			Kasse kasse = new Kasse();
 			Produkt apfel = new Produkt ("Apfel", 30);
 			Produkt banane = new Produkt ("Banane", 80);
+			Produkt schokoladenEis = new Produkt ("schokoladenEis" , 499);
+			Produkt pistazienEis = new Produkt ("Pistazieneis", 950);
 			
 			//2. Ausführung Programmlogik
 			kasse.scan(apfel);
 			kasse.scan(banane);
 			kasse.scan(banane);
+			kasse.scan(schokoladenEis);
 			
 			ArrayList<Produkt> produkte = kasse.getEinkaufswagen();
 
 			
 			//3. Erwartungswerte vergleichen
-			Assert.assertEquals(3, produkte.size());
+			Assert.assertEquals(4, produkte.size());
 			
 			for(Produkt p : produkte) {
 				System.out.println(p.getNameProdukt() + " " + p.getPreis() + " cent");
 				
 			}
-			System.out.println("Versteckte Nachricht an Lisa");
-			System.out.println("Versteckte Nachricht an Lisa: HUHU");
-			
-			System.out.println("Das mit dem Nachrichtenverstecken musst du aber noch ueben");
+
 }
 }
