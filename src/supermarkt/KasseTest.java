@@ -16,7 +16,7 @@ public class KasseTest {
 			Kasse kasse = new Kasse();
 			Produkt apfel = new Produkt ("Apfel", 30);
 			Produkt banane = new Produkt ("Banane", 80);
-			Produkt erdbeerEis = new Produkt ("Erdbeereis" , 499);
+			Produkt schokoladenEis = new Produkt ("schokoladenEis" , 499);
 			Produkt pistazienEis = new Produkt ("Pistazieneis", 950);
 			
 			//2. Ausführung Programmlogik
