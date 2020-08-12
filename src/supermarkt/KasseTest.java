@@ -56,14 +56,13 @@ public class KasseTest {
 			//2. Ausführung Programmlogik
 			kasse.scan(apfel);
 			kasse.scan(banane);
-			kasse.scan(banane);
 			kasse.scan(schokoladenEis);
 			
 			ArrayList<Produkt> produkte = kasse.getEinkaufswagen();
 
 			
 			//3. Erwartungswerte vergleichen
-			Assert.assertEquals(4, produkte.size());
+			Assert.assertEquals(3, produkte.size());
 			
 			for(Produkt p : produkte) {
 				System.out.println(p.getNameProdukt() + " " + p.getPreis() + " cent");
