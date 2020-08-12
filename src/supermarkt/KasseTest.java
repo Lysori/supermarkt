@@ -23,10 +23,13 @@ public class KasseTest {
 			kasse.scan(apfel);
 			kasse.scan(banane);
 			kasse.scan(banane);
+			kasse.scan(schokoladenEis);
+			kasse.scan(pistazienEis);
 			
 			
 			//3.Ergebnisse mit den zu erwartenden Werten vergleichen
-			Assert.assertEquals((apfel.getPreis() + 2 * banane.getPreis()), kasse.getZwischenSumme(), 0.01);
+			Assert.assertEquals((apfel.getPreis() + 2 * banane.getPreis()) + schokoladenEis.getPreis()
+			+ pistazienEis.getPreis(), kasse.getZwischenSumme(), 0.01);
 			
 		}
 		
